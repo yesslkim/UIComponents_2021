@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- Style  -->
     <link rel="stylesheet" href="./assets/CSS/reset.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
@@ -21,15 +21,115 @@
         <h1>UI Components Library</h1>
         <p>다양한 UI Components 마크업 연습 기록용 웹사이트</p>
     </header>
+    <main>
+        <div class="wrapper">
+            <article>
+                <h2>Context menu</h2>
+                <ul class="context-menu">
+                    <li>
+                        <div class="context-menu01">
+                            <img src="./assets/images/image01.jfif" alt="3D 렌더 디자인">
+                            <div>
+                                <h3>3D 디자인 기초 배우기</h3>
+                                <button type="button" class="cont01-btn"><span class="sr-only">더 보기</span></button>
+                                <ul class="cont01-menu">
+                                    <li>
+                                        <a href="#">공유하기</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">링크복사</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">관심없어요</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="context-menu02">
+                            <ul>
+                                <li>
+                                    <p>
+                                        공자는 찬미를 우리 이는 가진 같은 평화스러운 반짝이는 하는 아름다우냐?
+                                        인생의 곧 평화스러운 주는 우리의 이것이다.
+                                    </p>
+                                    <button type="button"><span class="sr-only">더 보기</span></button>
+                                    <div class="cont02-more">
+                                        <p>
+                                            영원히 수 살았으며,
+                                            우리는 곳으로 동산에는 것이다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        가을로 까닭이요, 이름자를 한 아이들의 계십니다.
+                                        밤을 별 언덕 이름자 이런 계십니다.
+                                    </p>
+                                    <button type="button"><span class="sr-only">더 보기</span></button>
+                                    <div class="cont02-more">
+                                        <p>
+                                            별 걱정도 지나고 슬퍼하는 밤이 청춘이 노루, 듯합니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        못 불러 가을로 이름과, 계십니다.
+                                        하나에 둘 별에도 하나에 나는 사랑과 언덕 봅니다.
+                                    </p>
+                                    <button type="button"><span class="sr-only">더 보기</span></button>
+                                    <div class="cont02-more">
+                                        <p>
+                                            청춘이 이웃 쉬이 차 나의 어머니, 언덕 그러나 있습니다.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="context-menu03">
+                            <div class="cont03-list">
+                                <div>
+                                    <span>MP3</span>
+                                </div>
+                                <div>
+                                    <h3>Savage</h3>
+                                    <strong>asepa</strong>
+                                    <span>4:07</span>
+                                </div>
+                            </div>
+                            <div class="cont03-menu">
+                                <ul>
+                                    <li class="play"><a href="#">Play</a></li>
+                                    <li class="rename">
+                                        <a href="#">Open With...</a>
+                                        <ul>
+                                            <li class="google"><a href="#">Google</a></li>
+                                            <li class="youtube"><a href="#">Youtube</a></li>
+                                            <li class="twitter"><a href="#">Twitter</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="delete"><a href="#">Delete</a></li>
+                                    <li class="copy"><a href="#">Copy</a></li>
+                                    <li class="rename"><a href="#">Rename</a></li>
+                                    <li class="restore disabled"><a href="#">Restore Previous Version</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </main>
+
     <!-- Jquery  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="./assets/index.js"></script>
-    <script>
-        $(function () {
-            console.log('hello world')
-        })
-    </script>
 </body>
 
 </html>
