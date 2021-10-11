@@ -1,0 +1,13 @@
+body {
+  background-color: #e8e8e8;
+}
+
+/* Header Section  */
+.header {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header strong {
+  font-weight: 700;
+}
