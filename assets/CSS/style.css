@@ -1,5 +1,5 @@
 body {
-  background-color: #e8e8e8;
+  background-color: #edf2f7;
 }
 
 /* Header Section  */
@@ -10,4 +10,88 @@ body {
 
 .header strong {
   font-weight: 700;
+}
+
+/*  Main Section  */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Main - Context Menu  */
+.title-01::before {
+  content: "1️⃣";
+}
+
+/* Context-menu 01 */
+
+.context-menu01 {
+  margin: 5px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 9.6px 5.6px -94px rgba(0, 0, 0, 0.15),
+    16px 77px 45px -94px rgba(0, 0, 0, 0.3);
+}
+
+.context-menu01 img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.context-menu01 > div {
+  position: relative;
+}
+
+.cont01-title {
+  position: relative;
+}
+
+.cont01-title h3 {
+  padding: 10px;
+  font-weight: 700;
+}
+
+.cont01-title button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 5 10px;
+  background-color: transparent;
+}
+
+.cont01-btn::before {
+  color: #1a1a1a;
+  font-weight: 800;
+  content: "\f141";
+}
+
+.cont01-menu {
+  position: absolute;
+  bottom: 55px;
+  right: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.cont01-menu.hidden {
+  display: none;
+}
+
+.cont01-menu::after {
+  position: absolute;
+  right: 10px;
+  bottom: -4px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  content: "";
+}
+
+.cont01-menu li {
+  padding: 0 0 5px 2px;
 }
