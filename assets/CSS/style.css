@@ -15,6 +15,7 @@ body {
 /*  Main Section  */
 .wrapper {
   display: flex;
+  padding: 10px 20px;
   flex-direction: column;
   align-items: center;
 }
@@ -27,11 +28,9 @@ body {
 /* Context-menu 01 */
 
 .context-menu01 {
-  margin: 5px 10px;
   border-radius: 10px;
   background-color: #fff;
-  box-shadow: 2px 9.6px 5.6px -94px rgba(0, 0, 0, 0.15),
-    16px 77px 45px -94px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
 }
 
 .context-menu01 img {
@@ -56,8 +55,8 @@ body {
   position: absolute;
   top: 50%;
   right: 10px;
-  transform: translateY(-50%);
   padding: 5 10px;
+  transform: translateY(-50%);
   background-color: transparent;
 }
 
@@ -69,29 +68,85 @@ body {
 
 .cont01-menu {
   position: absolute;
-  bottom: 55px;
   right: 5px;
+  bottom: 55px;
   padding: 10px 20px;
   border-radius: 5px;
   background-color: #fff;
 }
 
-.cont01-menu.hidden {
-  display: none;
-}
-
 .cont01-menu::after {
+  display: block;
   position: absolute;
   right: 10px;
   bottom: -4px;
-  display: block;
   width: 20px;
   height: 20px;
+  content: "";
   background-color: #fff;
   transform: rotate(45deg);
-  content: "";
 }
 
 .cont01-menu li {
   padding: 0 0 5px 2px;
 }
+
+/* Context-menu 02 */
+
+.context-menu02 {
+  background-color: #fff;
+  box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
+}
+
+.context-menu02 ul {
+  width: 95%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.context-menu02 li {
+  position: relative;
+  padding: 5px 0 40px 5px;
+  border: 1px solid #1a1a1a;
+  margin-bottom: 5px;
+}
+
+.context-menu02 button {
+  position: absolute;
+  right: 3px;
+  bottom: 7px;
+  padding: 3px 10px;
+  font-weight: 700;
+  border-radius: 20px;
+  background-color: #f5ff9a;
+  z-index: 10;
+  transition: background-color .3s ease-in-out;
+}
+
+.context-menu02 button:hover {
+  background-color: #efff61;
+}
+
+.context-menu02 button::after {
+  display: inline-block;
+  font-weight: 800;
+  content: '\f078';
+  padding-left: 5px;
+}
+
+.cont02-more {
+  position: absolute;
+  right: 3px;
+  bottom: -12px;
+  z-index: 5;
+}
+
+.cont02-more p {
+  padding: 5px;
+  background-color: #f5ff9a;
+  box-shadow: 0px 6px 16px rgb(0 0 0 / 12%);
+}
+
+
+
+
